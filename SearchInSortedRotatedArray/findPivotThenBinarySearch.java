@@ -6,10 +6,8 @@
 
 class Solution {
      public int findPivot(int[] nums, int l,int r){
-        if(l>r)
+        if(l>=r)
             return -1;
-        if(l==r)
-            return l;
         int mid=(l+r)/2;
         if(mid<r && nums[mid]>nums[mid+1])
             return mid+1;
