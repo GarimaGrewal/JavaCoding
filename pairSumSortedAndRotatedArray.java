@@ -4,10 +4,8 @@
 //https://www.codingninjas.com/codestudio/problems/find-pair-sum-in-rotated-and-sorted-array_985350
 public class Solution {
     public static int findPivot(int[] arr, int l, int h){
-      if(l>h)
+      if(l>=h)
           return -1;
-      if(l==h)
-          return l;
       int mid=(l+h)/2;
       if(mid<h && arr[mid+1]<arr[mid] )
           return mid+1;
